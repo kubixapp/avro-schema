@@ -1,7 +1,7 @@
 {
-  "namespace": "com.example.avro",
+  "namespace": "app.kubix.avro",
   "type": "record",
-  "name": "User",
+  "name": "UserTer",
   "fields": [
     {"name": "id", "type": "int"},
     {"name": "username", "type": "string"},
