@@ -4,7 +4,7 @@
   "namespace": "app.avro.kubix",
   "fields": [
     {
-      "name": "type",
+      "name": "NotificationOperation",
       "type": {
         "type": "enum",
         "name": "NotificationOperation",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "name": "type",
+      "name": "NotificationType",
       "type": {
         "type": "enum",
         "name": "NotificationType",
