@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "NotificationRequest",
+  "namespace": "com.example",
+  "fields": [
+    {
+      "name": "type",
+      "type": {
+        "type": "enum",
+        "name": "NotificationType",
+        "symbols": ["EMAIL", "SMS", "PUSH"]
+      }
+    }
+  ]
+}
