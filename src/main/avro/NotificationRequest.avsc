@@ -1,6 +1,6 @@
 {
   "type": "record",
-  "name": "NotificationRequest",
+  "name": "NotificationOtpRequest",
   "namespace": "app.avro.kubix",
   "fields": [
     {
@@ -12,42 +12,10 @@
       }
     },
     {
-      "name": "notificationType",
+      "name": "otpMessage",
       "type": {
-        "type": "enum",
-        "name": "NotificationType",
-        "symbols": ["OTP", "INVITATION", "GENERAL"]
+        "type": "string"
       }
-    },
-    {
-      "name": "message",
-      "type": [
-        "null",
-        {
-          "type": "record",
-          "name": "OTPMessage",
-          "fields": [
-            {"name": "otp", "type": "string"}
-          ]
-        },
-        {
-          "type": "record",
-          "name": "InvitationMessage",
-          "fields": [
-            {"name": "inviteeName", "type": "string"},
-            {"name": "event", "type": "string"}
-          ]
-        },
-        {
-          "type": "record",
-          "name": "GeneralMessage",
-          "fields": [
-            {"name": "subject", "type": "string"},
-            {"name": "body", "type": "string"}
-          ]
-        }
-      ],
-      "default": null
     }
   ]
 }
